@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk Official Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span><span></span><span></span>
+        <ul id="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Elon</a></li>
+            <li><a href="/companies.html">Companies</a></li>
+            <li><a href="/updates.html">Updates</a></li>
+            <li><a href="/donations.html">Donate / Shop</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to the Official Elon Musk Portal</h1>
+        <p>Explore the future with us.</p>
+    </div>
+    <!-- Chat widget -->
+    <div id="chatWidget" class="chat-closed">
+        <div id="chatHeader"><i class="fas fa-robot"></i> AI Assistant (Elon's Voice)<div id="chatControls"><i class="fas fa-minus minimize"></i><i class="fas fa-times close"></i></div></div>
+        <div id="chatMessages"></div>
+        <div id="chatInputArea"><input type="text" id="chatInput" placeholder="Ask me anything..."><button id="sendBtn"><i class="fas fa-paper-plane"></i></button><button id="voiceBtn"><i class="fas fa-volume-up"></i></button></div>
+    </div>
+    <div id="chatToggle"><i class="fas fa-comment-dots"></i></div>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/js/three-background.js"></script>
+    <script src="/js/chat.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
